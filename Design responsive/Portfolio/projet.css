@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: #C18381;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+.navbar a{ 
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover{
+  color: white;
+  border-bottom: 3px solid white ; 
+}
+
+.contact{ 
+  padding: 10px 28px;
+  background-color: white;
+  
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: black;
+}
+.contact >a{
+  color: black;
+}
+.contact:hover{ 
+  background-color: #C18381;
+  box-shadow: 0 0 25px #C18381;
+  
+}
+
+
+.projets  {
+  color: black; 
+  margin-bottom: 30px; 
+  text-align: left;
+  padding-left: 50px; 
+  margin-top: 150px; 
+  
+
+
+}
+
+.projets h2 {
+  color: black; 
+  font-size: 50px;
+  margin-bottom: 8%; 
+  margin-left: 100px;
+}
+
+.project-list li {
+  font-size: 1.2em; 
+  line-height: 1.8;
+  margin-bottom: 30px; 
+  display: flex; 
+  align-items: flex-start; 
+  font-size: 25px; 
+  margin-left: 120px; 
+  position: relative;
+}
+.star {
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ left: 133px;
+ margin-top: 18px;
+ background-color: #FB7979;
+}
+footer {
+  display: flex;
+  justify-content:flex-end;   
+  align-items: center;
+  gap: 5%;               
+  margin: 15px 16px;
+  margin-top: 8%;
+  margin-right: 15%;
+}
+
+footer img {
+  width: 25px;           
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1);    
+}
+
+
+
+
+@media (max-width: 768px) {
+
+   .header {
+     padding: 20px 6%;
+     flex-direction: column;
+     gap: 15px;
+     position: relative;
+   }
+ 
+   .header h2 {
+     font-size: 20px;
+     text-align: center;
+   }
+ 
+   .navbar {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+   }
+ 
+   .navbar a {
+     font-size: 16px;
+     margin: 0;
+   }
+ 
+   
+   .contact {
+     font-size: 15px;
+     padding: 8px 20px;
+   }
+   
+   .projets {
+     padding: 40px 6%;
+     padding-top: 20px;
+   }
+ 
+   .projets h2 {
+     font-size: 26px;
+     text-align: center;
+     margin-bottom: 25px;
+   }
+ 
+   .project-list {
+     padding-left: 0;
+   }
+ 
+   .project-list li {
+     font-size: 16px;
+     line-height: 1.6;
+     margin-bottom: 15px;
+   }
+ 
+   .project-list li strong {
+     display: block;
+     margin-bottom: 5px;
+     font-weight: 700;
+   }
+ 
+   
+   footer {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     margin: 20px 0;
+   }
+ }
+ 
+ 
